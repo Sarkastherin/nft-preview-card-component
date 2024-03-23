@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --very-dark-blue-main: hsl(217, 54%, 11%);
+  --very-dark-blue-card: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%)
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--very-dark-blue-main);
+  color: var(--soft-blue);
+  font-size: 18px;
+}
+
+.card {
+  background-color: var(--very-dark-blue-card);
+  max-width: 400px;
+  padding: 25px;
+  border-radius: 15px;
+}
+.card-image {
+  background-image: url(./images/image-equilibrium.jpg);
+  width: 100%;
+  height: 350px;
+	text-align: center;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+  border-radius: 20px;
+}
+.card-image::before {
+  visibility: hidden;
+	content:url(./images/icon-view.svg);
+	position: absolute;
+  top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: hsla(178, 100%, 50%, 0.555);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.card-image:hover.card-image::before {
+  visibility: visible;
+}
+.title {
+  color: var(--white);
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin: 20px 0;
+  cursor: pointer;
+}
+.title:hover, .creator-name span:hover {
+  color: var(--cyan);
+}
+.description {
+  font-weight: 300;
+}
+.price-time {
+  margin: 20px 0;
+}
+.price {
+  color: var(--cyan);
+  font-size: 0.9rem;
+  vertical-align: middle;
+}
+.price::before {
+  content: url(./images/icon-ethereum.svg);
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.time-left::before {
+  content: url(./images/icon-clock.svg);
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.time-left {
+  float: inline-end;
+  vertical-align: middle;
+  font-weight: 300;
+}
+.creator {
+  border-top: var(--very-dark-blue-line) 1px solid;
+  width: 100%;
+  margin-top: 20px;
+  padding: 15px;
+}
+.creator-image {
+  width: 35px;
+  vertical-align: middle;
+  border: var(--white) 1px solid;
+  border-radius: 50%;
+}
+.creator-name {
+  display: inline-block;
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+.creator-name span {
+  color: var(--white);
+  cursor: pointer;
+}
