@@ -1,0 +1,66 @@
+{
+  "devDependencies": {
+    "gh-pages": "^6.1.1"
+  },
+  "name": "nft-preview-card-component",
+  "description": "This is a solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "async": "^3.2.5",
+    "array-union": "^1.0.2",
+    "commondir": "^1.0.1",
+    "commander": "^11.1.0",
+    "email-addresses": "^5.0.0",
+    "array-uniq": "^1.0.3",
+    "concat-map": "^0.0.1",
+    "filename-reserved-regex": "^2.0.0",
+    "brace-expansion": "^1.1.11",
+    "escape-string-regexp": "^1.0.5",
+    "find-up": "^4.1.0",
+    "fs-extra": "^11.2.0",
+    "fs.realpath": "^1.0.0",
+    "balanced-match": "^1.0.2",
+    "glob": "^7.2.3",
+    "find-cache-dir": "^3.3.2",
+    "inflight": "^1.0.6",
+    "graceful-fs": "^4.2.11",
+    "inherits": "^2.0.4",
+    "locate-path": "^5.0.0",
+    "make-dir": "^3.1.0",
+    "once": "^1.4.0",
+    "minimatch": "^3.1.2",
+    "p-limit": "^2.3.0",
+    "object-assign": "^4.1.1",
+    "p-try": "^2.2.0",
+    "p-locate": "^4.1.0",
+    "path-exists": "^4.0.0",
+    "pify": "^2.3.0",
+    "pinkie": "^2.0.4",
+    "path-is-absolute": "^1.0.1",
+    "pinkie-promise": "^2.0.1",
+    "pkg-dir": "^4.2.0",
+    "semver": "^6.3.1",
+    "jsonfile": "^6.1.0",
+    "trim-repeated": "^1.0.0",
+    "globby": "^6.1.0",
+    "filenamify": "^4.3.0",
+    "universalify": "^2.0.1",
+    "wrappy": "^1.0.2",
+    "strip-outer": "^1.0.1"
+  },
+  "scripts": {
+    "deploy": "gh-pages -d src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sarkastherin/nft-preview-card-component.git"
+  },
+  "keywords": [],
+  "author": "Katherin Guerrero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sarkastherin/nft-preview-card-component/issues"
+  },
+  "homepage": "https://github.com/Sarkastherin/nft-preview-card-component#readme"
+}
